@@ -1,0 +1,173 @@
+import React, {useState} from 'react';
+import {
+  ScrollView,
+  Text,
+  View,
+  Image,
+  StyleSheet,
+  SafeAreaView,
+  TouchableOpacity,
+  StatusBar,
+  Dimensions,
+} from 'react-native';
+import styles from './styles';
+const HomeScreen = () => {
+  return (
+    <SafeAreaView style={[styles.body]}>
+      {/* <ScrollView> */}
+      <View style={[styles.container, {backgroundColor: '#614CEA'}]}>
+        <View style={{flexDirection: 'row', margin: 10}}>
+          <Image
+            style={{width: 40, height: 40}}
+            source={{
+              uri: 'https://cdn-icons-png.flaticon.com/512/681/681582.png',
+            }}
+          />
+          <Text
+            style={{
+              fontFamily: 'Allura-Regular',
+              fontSize: 15,
+              fontWeight: 'bold',
+              color: '#fff',
+              marginLeft: 15,
+              marginTop: 10,
+            }}>
+            Master Strokes
+          </Text>
+          <View style={{marginLeft: 80, flexDirection: 'row'}}>
+            <Image
+              style={[styles.img1, {width: 30, height: 30}]}
+              source={{
+                uri: 'https://www.freepnglogos.com/uploads/translate-logo-png/line-icon-logos-alteration-translate-language-21.png',
+              }}
+            />
+            <Image
+              style={[styles.img1, {width: 30, height: 30, marginLeft: 30}]}
+              source={{
+                uri: 'https://cdn-icons-png.flaticon.com/128/3602/3602145.png',
+              }}
+            />
+          </View>
+        </View>
+        <View style={{flexDirection: 'row', margin: 10, marginTop: -2}}>
+          <Text
+            style={{
+              color: '#fff',
+              maxWidth: '40%',
+              lineHeight: 30,
+              fontSize: 20,
+            }}>
+            PROD TEST CONTACTOR
+          </Text>
+
+          <Image
+            style={[
+              styles.img1,
+              {width: 40, height: 40, borderRadius: 40, marginLeft: '35%'},
+            ]}
+            source={{
+              uri: 'https://www.pngarts.com/files/5/Cartoon-Avatar-PNG-Transparent-Image.png',
+            }}
+          />
+          <Image
+            style={[
+              styles.img1,
+              {
+                width: 30,
+                height: 30,
+                borderRadius: 40,
+                marginLeft: 15,
+                marginTop: 5,
+              },
+            ]}
+            source={{
+              uri: 'https://icons.veryicon.com/png/o/miscellaneous/big-data-regular-monochrome-icon/sidebar-4.png',
+            }}
+          />
+        </View>
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'flex-end',
+            right: 30,
+            bottom: 30,
+          }}>
+          <Text style={{fontSize: 14, color: '#fff'}}>
+            -292746.00Pts to Gold
+          </Text>
+        </View>
+        <View style={{flexDirection: 'row', marginLeft: 15, marginTop: -3,marginTop:20,marginVertical:20,}}>
+          <Image
+            style={[styles.img1, {width: 20, height: 30,bottom:26,}]}
+            source={{
+              uri: 'http://cdn.onlinewebfonts.com/svg/img_552537.png',
+            }}
+          />
+          <Text style={{fontSize: 20, color: '#fff', marginLeft: 10,bottom:26}}>
+            332747.00 <Text style={{fontSize: 10, color: '#fff',}}>Pts</Text>
+          </Text>
+
+          {/* <Text style={{fontSize:14,color: '#fff',}}>
+            -292746.00Pts to Gold
+          </Text> */}
+          <Text
+            style={{
+              width: '44%',
+              height: 8,
+              backgroundColor: '#fff',
+              borderRadius: 10,
+              bottom: 45,
+              left: 35,
+            }}></Text>
+          <View style={{right: '30%', bottom: 35 ,flexDirection:'row'}}>
+            <Text style={{color: '#fff'}}>
+              SILVER 
+            </Text>
+              <Text style={{color: '#fff', left:60,}}>GOLD</Text>
+          </View>
+        </View>
+      </View>
+      {/* </ScrollView> */}
+      <View
+        style={{
+          backgroundColor: '#fff',
+          borderRadius: 12,
+          marginVertical: -30,
+        }}>
+        <ScrollView style={{margin: 10}}>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Textss</Text>
+          <Text>Textssssssssssssss</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Text</Text>
+          <Text>Textdddddd</Text>
+          <Text>Text</Text>
+        </ScrollView>
+      </View>
+    </SafeAreaView>
+  );
+};
+
+export default HomeScreen;
